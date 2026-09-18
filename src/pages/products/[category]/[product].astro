@@ -25,8 +25,8 @@ const { category, product } = Astro.props;
       <nav aria-label="breadcrumb" class="breadcrumb-nav">
         <ol class="breadcrumb-list">
           <li><a href="/">Home</a></li>
-          <li><span class="separator">/</span><a href="/products">Products</a></li>
-          <li><span class="separator">/</span><a href={`/products/${category.id}`}>{category.category}</a></li>
+          <li><span class="separator">/</span><a href="/products/">Products</a></li>
+          <li><span class="separator">/</span><a href={`/products/${category.id}/`}>{category.category}</a></li>
           <li aria-current="page"><span class="separator">/</span><span class="current">{product.name}</span></li>
         </ol>
       </nav>
@@ -189,7 +189,7 @@ const { category, product } = Astro.props;
           )}
           <div style="display: flex; gap: 1rem;">
             <a href="/contact" class="btn btn--primary">Enquire Now</a>
-            <a href={`/products/${category.id}`} class="btn btn--outline" style="border: 1px solid #e5e7eb; color: var(--ink-2);">Back to {category.category}</a>
+            <a href={`/products/${category.id}/`} class="btn btn--outline" style="border: 1px solid #e5e7eb; color: var(--ink-2);">Back to {category.category}</a>
           </div>
         </div>
       </div>

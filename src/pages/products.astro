@@ -54,7 +54,7 @@ import { productsData } from '../data/products.js';
         {productsData.map((cat) => {
           const cardImg = cat.image || (cat.items && cat.items[0]?.images?.[0]);
           return (
-            <a href={`/products/${cat.id}`} class="category-card">
+            <a href={`/products/${cat.id}/`} class="category-card">
               {cardImg ? (
                 <div class="card-media">
                   <img src={cardImg} alt={cat.category} loading="lazy" class="card-img" />

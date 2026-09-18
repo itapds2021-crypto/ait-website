@@ -18,12 +18,12 @@ import { productsData } from '../data/products.js';
             <ul class="mega-categories">
               {productsData.map(cat => (
                 <li class={`mega-category-item ${cat.items.length > 0 ? 'has-submenu' : ''}`}>
-                  <a href={`/products/${cat.id}`}>{cat.category}</a>
+                  <a href={`/products/${cat.id}/`}>{cat.category}</a>
                   {cat.items.length > 0 && (
                     <div class="mega-submenu">
                       <ul>
                         {cat.items.map(item => (
-                          <li><a href={`/products/${cat.id}/${item.id}`}>{item.name}</a></li>
+                          <li><a href={`/products/${cat.id}/${item.id}/`}>{item.name}</a></li>
                         ))}
                       </ul>
                     </div>
