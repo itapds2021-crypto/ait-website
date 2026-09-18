@@ -92,14 +92,7 @@ const { activeCategory, allCategories } = Astro.props;
   .products-layout {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-
-  @media (min-width: 768px) {
-    .products-layout {
-      grid-template-columns: 300px 1fr;
-      align-items: start;
-    }
+    gap: 2rem;
   }
 
   /* Sidebar Styles */
@@ -108,7 +101,7 @@ const { activeCategory, allCategories } = Astro.props;
     top: calc(var(--hdr-h) + 20px);
     background: #fff;
     border-radius: 12px;
-    padding: 2rem;
+    padding: 1.5rem;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     border: 1px solid rgba(0,0,0,0.05);
   }
@@ -146,7 +139,7 @@ const { activeCategory, allCategories } = Astro.props;
   }
 
   .category-link.active {
-    background: var(--blue, #006A9A); /* Explicit blue background instead of red */
+    background: var(--blue, #006A9A);
     color: #fff;
     box-shadow: 0 4px 12px rgba(0, 86, 179, 0.3);
   }
@@ -248,5 +241,72 @@ const { activeCategory, allCategories } = Astro.props;
   .btn--sm {
     padding: 0.6rem 1.2rem;
     font-size: 0.875rem;
+  }
+
+  /* Desktop View */
+  @media (min-width: 1025px) {
+    .products-layout {
+      grid-template-columns: 280px 1fr;
+      align-items: start;
+      gap: 3rem;
+    }
+  }
+
+  /* Tablet View */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .products-layout {
+      grid-template-columns: 240px 1fr;
+      align-items: start;
+      gap: 2rem;
+    }
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+  }
+
+  /* Mobile View */
+  @media (max-width: 767px) {
+    .products-main {
+      padding: 30px 0 !important;
+    }
+    .products-sidebar {
+      position: static;
+      padding: 1.25rem 1rem;
+      margin-bottom: 1rem;
+    }
+    .products-sidebar h2 {
+      font-size: 1.1rem;
+      margin-bottom: 0.85rem !important;
+    }
+    .category-list {
+      flex-direction: row;
+      overflow-x: auto;
+      gap: 0.5rem;
+      padding-bottom: 6px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+    }
+    .category-link {
+      white-space: nowrap;
+      flex-shrink: 0;
+      padding: 0.55rem 0.95rem;
+      font-size: 0.85rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 20px;
+    }
+    .category-link .icon-arrow {
+      display: none;
+    }
+    .product-grid {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+    .card-media {
+      height: 180px;
+    }
+    .card-body {
+      padding: 1.25rem;
+    }
   }
 </style>

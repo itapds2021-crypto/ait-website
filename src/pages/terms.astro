@@ -43,7 +43,7 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Content Section -->
-  <section class="band band--white legal-content" style="padding: 80px 0;">
+  <section class="band band--white legal-content">
     <div class="shell" style="max-width: 960px; margin: 0 auto;">
       <div class="legal-card">
         <p class="legal-meta"><strong>Effective Date:</strong> January 1, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> March 2026</p>
@@ -128,6 +128,10 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
+  .legal-content {
+    padding: 70px 0;
+  }
+
   .legal-card {
     background: #ffffff;
     border-radius: 12px;
@@ -136,6 +140,8 @@ import Layout from '../layouts/Layout.astro';
     border: 1px solid rgba(0, 0, 0, 0.06);
     color: var(--c-text, #1f2937);
     line-height: 1.75;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 
   .legal-meta {
@@ -212,8 +218,18 @@ import Layout from '../layouts/Layout.astro';
   }
 
   @media (max-width: 768px) {
+    .legal-content {
+      padding: 36px 0;
+    }
     .legal-card {
-      padding: 28px 20px;
+      padding: 24px 18px;
+    }
+    .legal-section h2 {
+      font-size: 1.2rem;
+    }
+    .legal-intro {
+      font-size: 1rem;
+      margin-bottom: 24px;
     }
   }
 </style>

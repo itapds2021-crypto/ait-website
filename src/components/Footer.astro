@@ -56,6 +56,7 @@ Designed by <a href="https://apdigisolutions.com/" target="_blank" rel="noopener
     align-items: center;
     gap: 12px;
     font-size: 0.82rem;
+    flex-wrap: wrap;
   }
   .ftr__links a {
     color: rgba(199, 209, 216, 0.55);
@@ -68,5 +69,10 @@ Designed by <a href="https://apdigisolutions.com/" target="_blank" rel="noopener
   .ftr__sep {
     color: rgba(199, 209, 216, 0.3);
     font-size: 0.75rem;
+  }
+  @media (max-width: 640px) {
+    .ftr__links {
+      gap: 8px;
+    }
   }
 </style>

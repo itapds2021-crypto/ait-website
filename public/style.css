@@ -180,8 +180,10 @@ body.is-preload *,body.is-preload *::before,body.is-preload *::after{transition:
 /* ---------- 7. MOBILE MENU ---------- */
 .mmenu{
   position:fixed;inset:0;z-index:85;background:var(--black);
-  display:flex;flex-direction:column;justify-content:center;gap:48px;
-  padding:calc(var(--hdr-h) + 24px) 28px 40px;
+  display:flex;flex-direction:column;justify-content:flex-start;gap:36px;
+  padding:calc(var(--hdr-h) + 16px) 24px 40px;
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
   opacity:0;visibility:hidden;transform:translateY(-14px);
   transition:opacity .5s var(--ease),transform .5s var(--ease),visibility .5s;
 }
@@ -192,15 +194,15 @@ body.is-preload *,body.is-preload *::before,body.is-preload *::after{transition:
   background-image:linear-gradient(to right,rgba(199,209,216,.05) 1px,transparent 1px),linear-gradient(to bottom,rgba(199,209,216,.05) 1px,transparent 1px);
   background-size:44px 44px;
 }
-.mmenu__nav{display:flex;flex-direction:column;gap:6px;position:relative}
+.mmenu__nav{display:flex;flex-direction:column;gap:4px;position:relative}
 .mmenu__nav a{
-  display:flex;align-items:baseline;gap:18px;padding:16px 0;
+  display:flex;align-items:baseline;gap:16px;padding:11px 0;
   border-bottom:1px solid var(--hair-dark);
-  font-family:var(--font-h);font-size:clamp(1.7rem,8vw,2.4rem);font-weight:800;color:#fff;
+  font-family:var(--font-h);font-size:clamp(1.15rem,4.5vw,1.8rem);font-weight:700;color:#fff;
   letter-spacing:-.02em;
 }
 .mmenu__idx{font-family:var(--font-b);font-size:.72rem;font-weight:600;letter-spacing:.2em;color:var(--cyan)}
-.mmenu__foot{position:relative;display:flex;flex-direction:column;gap:24px}
+.mmenu__foot{position:relative;display:flex;flex-direction:column;gap:20px;padding-top:10px}
 .mmenu__meta{display:flex;flex-direction:column;gap:6px;font-size:.9rem;color:rgba(199,209,216,.66)}
 
 /* ---------- 8. HERO ---------- */
@@ -632,6 +634,14 @@ body.is-preload *,body.is-preload *::before,body.is-preload *::after{transition:
 .cursor.is-on{opacity:1}
 .cursor.is-hot span{transform:scale(1.5) rotate(45deg);border-color:rgba(0,160,198,.9)}
 
+/* ---------- 26.5 BREADCRUMBS ---------- */
+.crumb{position:relative;margin-top:20px}
+.crumb ol{display:flex;flex-wrap:wrap;align-items:center;gap:10px;row-gap:6px;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;padding:0;list-style:none;margin:0}
+.crumb a{color:rgba(199,209,216,.6);transition:color .4s var(--ease);text-decoration:none}
+.crumb a:hover{color:var(--cyan)}
+.crumb li[aria-current]{color:rgba(199,209,216,.95)}
+.crumb .sep{width:14px;height:1px;background:rgba(199,209,216,.32);display:inline-block}
+
 /* ============================================================
    27. RESPONSIVE
    ============================================================ */
@@ -640,7 +650,8 @@ body.is-preload *,body.is-preload *::before,body.is-preload *::after{transition:
   .about__grid{gap:56px}
   .caps__grid{grid-template-columns:repeat(2,1fr)}
   .qual__grid{grid-template-columns:repeat(2,1fr)}
-  .nav__list{gap:26px}
+  .nav__list{gap:clamp(12px, 1.6vw, 24px)}
+  .nav__link{font-size:clamp(0.82rem, 0.92vw, 0.94rem);padding:4px 0}
   .faq__grid{gap:56px}
 }
 
@@ -980,6 +991,40 @@ body.is-preload *,body.is-preload *::before,body.is-preload *::after{transition:
 
   .cert-section {
     padding: 3.5rem 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-showcase {
+    padding: 3rem 0;
+  }
+  .about-showcase__grid {
+    gap: 2rem;
+  }
+  .about-showcase__heading {
+    font-size: 1.85rem;
+  }
+  .about-showcase__lead {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+  .about-showcase__body {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin-bottom: 1.75rem;
+  }
+  .about-showcase__btn {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 13px 24px;
+  }
+  .cert-section {
+    padding: 2.5rem 0;
+  }
+  .cert-section__title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 
