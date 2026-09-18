@@ -1,0 +1,619 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Us - A.I.T Engineers" description="Learn about A.I.T Engineers, an integrated industrial engineering, fabrication, automation and project execution company serving demanding process industries.">
+
+  <section class="hero" id="top">
+    <div class="hero__media">
+      <img class="hero__img" data-parallax="0.14"
+           src="/images/banner/about-us.png"
+           alt="" aria-hidden="true" fetchpriority="high">
+    </div>
+    <div class="hero__scrim" aria-hidden="true"></div>
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__sheen" aria-hidden="true"></div>
+
+    <!-- CAD line graphics -->
+    <svg class="hero__cad" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <g class="cad-lines">
+        <path class="draw" d="M-40 700 L420 700 L640 300 L1100 300 L1480 300"/>
+        <path class="draw" d="M1480 780 L1080 780 L900 460 L520 460"/>
+        <path class="draw" d="M180 900 L180 640 L340 380 L340 -20"/>
+        <path class="draw" d="M1240 -20 L1240 220 L1360 430 L1360 900"/>
+      </g>
+      <g class="cad-marks">
+        <path d="M420 690v20M410 700h20"/><path d="M900 450v20M890 460h20"/>
+        <path d="M340 370v20M330 380h20"/><path d="M1240 210v20M1230 220h20"/>
+        <circle cx="640" cy="300" r="5"/><circle cx="1080" cy="780" r="5"/>
+      </g>
+      <g class="cad-apex"><path d="M980 640 L1120 400 L1260 640" /><path d="M1022 640 L1120 472 L1218 640" /></g>
+    </svg>
+
+    <div class="hero__inner shell">
+      <p class="eyebrow eyebrow--light hero__eyebrow">
+        <span class="eyebrow__mark" aria-hidden="true"><svg><use href="#apex"/></svg></span> About A.I.T Engineers
+      </p>
+
+      <h1 class="hero__title">
+        <span class="line">Engineering Experience.</span>
+        <span class="line">Practical Manufacturing</span>
+      </h1>
+
+      <p class="hero__lede">We manufacture a diverse range of equipment including storage tanks, fly ash storage silos, cement silos, heat exchanger coils, U-shape heaters, pressure vessels, testing machines and other application-specific industrial equipment.</p>
+
+      <nav class="crumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-hidden="true"><span class="sep"></span></li>
+          <li aria-current="page">About Us</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section class="band band--white story" id="story">
+    <div class="blueprint" aria-hidden="true"></div>
+    <div class="shell story__grid">
+      <figure class="story__figure" data-gsap>
+        <div class="chamfer chamfer--lg story__frame" data-mask>
+          <img src="/images/about-about.png" alt="Welder joining heavy steel plate on a fabrication shop floor" data-parallax="0.05" loading="lazy">
+        </div>
+        <figcaption class="figcap"><span>FIG. 01</span> Fabrication floor — heavy plate welding</figcaption>
+        <span class="tick tick--tl" aria-hidden="true"></span>
+        <span class="tick tick--br" aria-hidden="true"></span>
+      </figure>
+      <div class="story__body">
+        <p class="eyebrow" data-gsap>
+          <span class="eyebrow__mark" aria-hidden="true"><svg><use href="#apex"></use></svg></span> Who We Are
+        </p>
+        <h2 class="h2" data-gsap data-gsap-delay="0.06">Manufacturing Solutions Built Around Industrial Requirements</h2>
+        <p class="lede" data-gsap data-gsap-delay="0.12">AIT Engineers was established with a focus on manufacturing dependable industrial equipment for varied operating and process requirements.</p>
+        <p data-gsap data-gsap-delay="0.16">Every requirement can involve different capacities, materials, dimensions and operating conditions. For this reason, we do not limit our manufacturing approach to standard configurations alone. Where required, equipment can be developed in customized specifications according to the customer's technical requirements.</p>
+        <p data-gsap data-gsap-delay="0.2">From raw-material procurement through manufacturing and delivery, our team works to maintain coordination throughout the execution process.</p>
+        <p data-gsap data-gsap-delay="0.2">FOur experience across industrial equipment manufacturing helps us approach each requirement with attention to practicality, manufacturability and the agreed specifications.</p>
+        <a class="link-cta" href="#capabilities" data-gsap data-gsap-delay="0.26">Explore Our Capabilities<svg aria-hidden="true"><use href="#arrow"></use></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--dark stats" aria-labelledby="snapshot-h">
+    <div class="apex-watermark" aria-hidden="true">
+      <svg viewBox="0 0 400 300"><path d="M20 280 200 20 380 280M70 280 200 92 330 280M118 280 200 162 282 280" fill="none" stroke="currentColor" stroke-width="1"></path></svg>
+    </div>
+    <div class="shell">
+      <div class="stats__head">
+        <p class="eyebrow eyebrow--light" data-gsap>
+          <span class="eyebrow__mark" aria-hidden="true"><svg><use href="#apex"></use></svg></span> Company Snapshot
+        </p>
+        <p class="stats__note" data-gsap data-gsap-delay="0.08">Indicative figures shown for design purposes.</p>
+      </div>
+      <h2 id="snapshot-h" class="sr-only">Company snapshot</h2>
+      <div class="stats__grid" data-stagger>
+        <div class="stat"><span class="stat__n"><span class="count" data-count="15">0</span><i>+</i></span><span class="stat__l">Years of Engineering Expertise</span></div>
+        <div class="stat"><span class="stat__n"><span class="count" data-count="250">0</span><i>+</i></span><span class="stat__l">Projects Delivered</span></div>
+        <div class="stat"><span class="stat__n"><span class="count" data-count="120">0</span><i>+</i></span><span class="stat__l">Industrial Clients</span></div>
+        <div class="stat"><span class="stat__n"><span class="count" data-count="30">0</span><i>+</i></span><span class="stat__l">Engineering &amp; Technical Professionals</span></div>
+        <div class="stat"><span class="stat__n"><span class="count" data-count="6">0</span></span><span class="stat__l">Core Industries</span></div>
+        <div class="stat"><span class="stat__n stat__n--txt"> Pan-India </span><span class="stat__l">Project Capability</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--charcoal approach">
+    <div class="shell">
+      <div class="sec-head sec-head--light">
+        <div>
+          <p class="eyebrow eyebrow--light" data-gsap>
+            <span class="eyebrow__mark" aria-hidden="true"><svg><use href="#apex"></use></svg></span> Our Approach
+          </p>
+          <h2 class="h2" data-gsap data-gsap-delay="0.06">Industrial Equipment for Different Application Requirements</h2>
+        </div>
+        <p class="sec-head__aside" data-gsap data-gsap-delay="0.12">Our manufacturing portfolio includes equipment for storage, bulk-material handling, heat-transfer and other industrial applications.</p>
+      </div>
+      <ol class="tl tl--dark" id="timeline">
+        <li class="tl__step"><span class="tl__node" aria-hidden="true"></span><span class="tl__n">01</span><span class="tl__t">Requirement Understanding</span><span class="tl__d">The application, capacity, dimensions, material requirements and other available technical details are reviewed.
+.</span></li>
+        <li class="tl__step"><span class="tl__node" aria-hidden="true"></span><span class="tl__n">02</span><span class="tl__t">Specification Review</span><span class="tl__d">The required configuration and manufacturing requirements are assessed before production.</span></li>
+        <li class="tl__step"><span class="tl__node" aria-hidden="true"></span><span class="tl__n">03</span><span class="tl__t">Material Procurement</span><span class="tl__d">Raw materials are arranged according to the requirements of the agreed equipment specification.</span></li>
+        <li class="tl__step"><span class="tl__node" aria-hidden="true"></span><span class="tl__n">04</span><span class="tl__t">Manufacturing</span><span class="tl__d">Equipment is manufactured using suitable machinery, tools and established fabrication practices.</span></li>
+        <li class="tl__step"><span class="tl__node" aria-hidden="true"></span><span class="tl__n">05</span><span class="tl__t">Quality Checks</span><span class="tl__d">Quality checks are carried out during different stages of production to maintain conformity with the required specifications.</span></li>
+        <li class="tl__step"><span class="tl__node" aria-hidden="true"></span><span class="tl__n">06</span><span class="tl__t"> Delivery</span><span class="tl__d">Completed equipment is prepared for delivery according to the agreed order requirements.</span></li>
+        <li class="tl__step"><span class="tl__node" aria-hidden="true"></span><span class="tl__n">07</span><span class="tl__t">Commission</span><span class="tl__d">Testing, trial runs and handover through to stable operation.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band band--white mission">
+    <div class="blueprint" aria-hidden="true"></div>
+    <div class="shell mv">
+      <div class="mv__col mv__col--a">
+        <span class="mv__k" data-gsap>Mission</span>
+        <h2 class="mv__h" data-gsap data-gsap-delay="0.06">Our Mission</h2>
+        <p class="mv__p" data-gsap data-gsap-delay="0.12">To manufacture dependable industrial equipment through practical engineering, quality-focused production and a clear understanding of customer requirements.
+We aim to deliver equipment that meets agreed specifications while maintaining attention to material selection, manufacturing accuracy and consistent quality checks throughout the production process.
+</p>
+        <div class="mv__mark" aria-hidden="true" data-gsap data-gsap-delay="0.18">
+          <svg viewBox="0 0 120 80" fill="none" stroke="currentColor" stroke-width="1"><path d="M6 74 60 8l54 66"></path><path d="M30 74 60 38l30 36"></path><path d="M0 74h120"></path></svg>
+        </div>
+      </div>
+      <div class="mv__rule" aria-hidden="true"><span></span></div>
+      <div class="mv__col mv__col--b">
+        <span class="mv__k" data-gsap data-gsap-delay="0.1">Vision</span>
+        <h2 class="mv__h" data-gsap data-gsap-delay="0.16">Our Vision</h2>
+        <p class="mv__p" data-gsap data-gsap-delay="0.22">To strengthen AIT Engineers as a trusted industrial equipment manufacturing company by continuously improving our technical capabilities, manufacturing processes and ability to deliver application-specific solutions.
+Our vision is to build long-term value through responsible manufacturing, dependable execution and continuous improvement.
+</p>
+        <div class="mv__mark" aria-hidden="true" data-gsap data-gsap-delay="0.28">
+          <svg viewBox="0 0 120 80" fill="none" stroke="currentColor" stroke-width="1"><circle cx="60" cy="40" r="22"></circle><path d="M60 6v14M60 60v14M6 40h14M100 40h14"></path><path d="M60 30 70 50H50Z"></path></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--soft values">
+    <div class="shell">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow" data-gsap><span class="eyebrow__mark" aria-hidden="true"><svg><use href="#apex"></use></svg></span> Core Values</p>
+          <h2 class="h2" data-gsap data-gsap-delay="0.06">The Principles Behind Our Work</h2>
+        </div>
+        <p class="sec-head__aside" data-gsap data-gsap-delay="0.12">These are working habits rather than slogans — each one shows up as a decision somewhere between the first review and the final inspection.</p>
+      </div>
+      <div class="vals" data-stagger>
+        <article class="val"><span class="val__n">01</span><span class="val__line" aria-hidden="true"><svg viewBox="0 0 120 20" fill="none" stroke="currentColor" stroke-width="1.2" preserveAspectRatio="none"><path d="M0 10h30M38 10h44M90 10h30M34 5v10M86 5v10"></path></svg></span><h3>Engineering Integrity</h3><p>Technical decisions grounded in practical engineering judgment and project requirements.</p><span class="val__rule" aria-hidden="true"></span></article>
+        <article class="val"><span class="val__n">02</span><span class="val__line" aria-hidden="true"><svg viewBox="0 0 120 20" fill="none" stroke="currentColor" stroke-width="1.2" preserveAspectRatio="none"><path d="M0 14h16l8-10 10 16 9-12 8 6h69"></path></svg></span><h3>Quality First</h3><p>Checks placed inside the fabrication sequence, not bolted on at the end.</p><span class="val__rule" aria-hidden="true"></span></article>
+        <article class="val"><span class="val__n">03</span><span class="val__line" aria-hidden="true"><svg viewBox="0 0 120 20" fill="none" stroke="currentColor" stroke-width="1.2" preserveAspectRatio="none"><path d="M0 10h30M38 10h44M90 10h30M34 5v10M86 5v10"></path></svg></span><h3>Safety Awareness</h3><p>Method statements and site controls agreed before work starts.</p><span class="val__rule" aria-hidden="true"></span></article>
+        <article class="val"><span class="val__n">04</span><span class="val__line" aria-hidden="true"><svg viewBox="0 0 120 20" fill="none" stroke="currentColor" stroke-width="1.2" preserveAspectRatio="none"><path d="M0 16h120M0 10v6M24 6v10M48 10v6M72 6v10M96 10v6M120 6v10"></path></svg></span><h3>Precision</h3><p>Dimensional accuracy treated as a build requirement rather than a target.</p><span class="val__rule" aria-hidden="true"></span></article>
+        <article class="val"><span class="val__n">05</span><span class="val__line" aria-hidden="true"><svg viewBox="0 0 120 20" fill="none" stroke="currentColor" stroke-width="1.2" preserveAspectRatio="none"><path d="M0 14h16l8-10 10 16 9-12 8 6h69"></path></svg></span><h3>Accountability</h3><p>A named point of contact who owns the scope from drawing to handover.</p><span class="val__rule" aria-hidden="true"></span></article>
+        <article class="val"><span class="val__n">06</span><span class="val__line" aria-hidden="true"><svg viewBox="0 0 120 20" fill="none" stroke="currentColor" stroke-width="1.2" preserveAspectRatio="none"><path d="M0 18h26v-6h30V6h34V2h30"></path></svg></span><h3>Continuous Improvement</h3><p>Lessons from each project fed back into method, tooling and detailing.</p><span class="val__rule" aria-hidden="true"></span></article>
+        <article class="val"><span class="val__n">07</span><span class="val__line" aria-hidden="true"><svg viewBox="0 0 120 20" fill="none" stroke="currentColor" stroke-width="1.2" preserveAspectRatio="none"><path d="M0 16h120M0 10v6M24 6v10M48 10v6M72 6v10M96 10v6M120 6v10"></path></svg></span><h3>Client Collaboration</h3><p>Queries raised early, while a change still costs a drawing revision.</p><span class="val__rule" aria-hidden="true"></span></article>
+        <article class="val"><span class="val__n">08</span><span class="val__line" aria-hidden="true"><svg viewBox="0 0 120 20" fill="none" stroke="currentColor" stroke-width="1.2" preserveAspectRatio="none"><path d="M0 18h26v-6h30V6h34V2h30"></path></svg></span><h3>Reliable Execution</h3><p>Realistic schedules, honest status reporting and predictable despatch.</p><span class="val__rule" aria-hidden="true"></span></article>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="band band--white capsx" id="capabilities">
+    <div class="shell">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow" data-gsap><span class="eyebrow__mark" aria-hidden="true"><svg><use href="#apex"></use></svg></span> Our Expertise</p>
+          <h2 class="h2" data-gsap data-gsap-delay="0.06">Engineering Capabilities Across The Project Lifecycle</h2>
+        </div>
+        <p class="sec-head__aside" data-gsap data-gsap-delay="0.12">The same nine capabilities we deliver, grouped by the phase they belong to — because most enquiries start with one phase and grow into the next.</p>
+      </div>
+      <div class="capgrp" data-stagger>
+        <article class="grp">
+          <span class="grp__bar" aria-hidden="true"></span>
+          <p class="grp__k"><svg aria-hidden="true"><use href="#ico-mech"></use></svg> Engineering</p>
+          <h3 class="grp__h">Design That Can Be Built</h3>
+          <p class="grp__p">Drawing sets developed against process data, site constraints and the realities of the shop floor.</p>
+          <ul class="grp__list"><li>Plant Design</li><li>Piping Design &amp; Layout</li><li>Mechanical Engineering</li><li>Structural Engineering</li></ul>
+        </article>
+        <article class="grp">
+          <span class="grp__bar" aria-hidden="true"></span>
+          <p class="grp__k"><svg aria-hidden="true"><use href="#ico-fab"></use></svg> Manufacturing &amp; Fabrication</p>
+          <h3 class="grp__h">Controlled Shop Output</h3>
+          <p class="grp__p">Plate rolling, forming and welded assembly carried out against the released drawings with fixed inspection points.</p>
+          <ul class="grp__list"><li>Fabrication</li><li>Process Equipment</li><li>Structural Fabrication</li><li>Equipment Manufacturing</li></ul>
+        </article>
+        <article class="grp">
+          <span class="grp__bar" aria-hidden="true"></span>
+          <p class="grp__k"><svg aria-hidden="true"><use href="#ico-epc"></use></svg> Project Execution</p>
+          <h3 class="grp__h">Delivered To Operation</h3>
+          <p class="grp__p">Site handling, erection and commissioning coordinated so equipment reaches stable running condition.</p>
+          <ul class="grp__list"><li>Industrial Automation</li><li>EPC Services</li><li>Installation &amp; Erection</li><li>Commissioning</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--charcoal mfg">
+    <div class="shell mfg__grid">
+      <div class="mfg__stack">
+        <figure class="mfg__lead" data-gsap data-mask>
+          <img src="/images/Fabrication workshop.png" alt="Overhead crane moving a load across a heavy fabrication workshop" data-parallax="0.04" loading="lazy">
+          <figcaption><span>A</span> Fabrication workshop</figcaption>
+        </figure>
+        <figure class="mfg__sm" data-gsap data-gsap-delay="0.06" data-mask>
+          <img src="/images/Welding.png" alt="Welder working on a steel joint with protective equipment" loading="lazy">
+          <figcaption><span>B</span> Welding</figcaption>
+        </figure>
+        <figure class="mfg__sm" data-gsap data-gsap-delay="0.12" data-mask>
+          <img src="/images/Equipment assembly.png" alt="Fabricated steel sections staged for equipment assembly" loading="lazy">
+          <figcaption><span>C</span> Equipment assembly</figcaption>
+        </figure>
+      </div>
+      <div class="mfg__body">
+        <p class="eyebrow eyebrow--light" data-gsap><span class="eyebrow__mark" aria-hidden="true"><svg><use href="#apex"></use></svg></span> Manufacturing Capability</p>
+        <h2 class="h2" data-gsap data-gsap-delay="0.06">Engineering Supported By Manufacturing Capability</h2>
+        <p class="lede" data-gsap data-gsap-delay="0.12">Our manufacturing approach is built around controlled fabrication, dimensional accuracy, inspection discipline and coordinated project execution.</p>
+        <p data-gsap data-gsap-delay="0.16">Keeping design and fabrication under one roof means a detail that will not build cleanly gets caught at the drawing stage rather than on the shop floor.</p>
+        <ul class="mfg__tags" data-gsap data-gsap-delay="0.22"><li>Customized Manufacturing</li><li>Quality Focus</li><li>Our Strengths</li><li>Our Purpose</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--white quality">
+    <div class="blueprint blueprint--strong" aria-hidden="true"></div>
+    <div class="shell">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow" data-gsap><span class="eyebrow__mark" aria-hidden="true"><svg><use href="#apex"></use></svg></span> Quality &amp; Safety</p>
+          <h2 class="h2" data-gsap data-gsap-delay="0.06">Quality Is Built Into The Process</h2>
+        </div>
+        <p class="sec-head__aside" data-gsap data-gsap-delay="0.12">Quality control begins with material verification and continues through fabrication, dimensional inspection, welding checks, testing, documentation and final inspection.</p>
+      </div>
+      <div class="qphil" data-stagger>
+        <article class="qstep"><span class="qstep__n">01</span><svg aria-hidden="true"><use href="#ico-material"></use></svg><h3>Material Inspection</h3><p>Incoming plate and section verified against the approved specification.</p></article>
+        <article class="qstep"><span class="qstep__n">02</span><svg aria-hidden="true"><use href="#ico-caliper"></use></svg><h3>Dimensional Control</h3><p>Critical dimensions checked at set points through fabrication.</p></article>
+        <article class="qstep"><span class="qstep__n">03</span><svg aria-hidden="true"><use href="#ico-fab"></use></svg><h3>Fabrication Inspection</h3><p>Fit-up and assembly reviewed before the next operation begins.</p></article>
+        <article class="qstep"><span class="qstep__n">04</span><svg aria-hidden="true"><use href="#ico-weld"></use></svg><h3>Welding Quality</h3><p>Procedures and visual checks applied across welded joints.</p></article>
+        <article class="qstep"><span class="qstep__n">05</span><svg aria-hidden="true"><use href="#ico-test"></use></svg><h3>Testing</h3><p>Pressure and leak testing carried out to the agreed scope.</p></article>
+        <article class="qstep"><span class="qstep__n">06</span><svg aria-hidden="true"><use href="#ico-doc"></use></svg><h3>Documentation</h3><p>Drawings, test records and reports compiled into a handover set.</p></article>
+        <article class="qstep"><span class="qstep__n">07</span><svg aria-hidden="true"><use href="#ico-shield"></use></svg><h3>Site Safety</h3><p>Method statements and site controls agreed before work begins.</p></article>
+        <article class="qstep"><span class="qstep__n">08</span><svg aria-hidden="true"><use href="#ico-check"></use></svg><h3>Final Inspection</h3><p>Complete check against the drawing set prior to despatch.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--black inds">
+    <div class="shell">
+      <div class="sec-head sec-head--light">
+        <div>
+          <p class="eyebrow eyebrow--light" data-gsap><span class="eyebrow__mark" aria-hidden="true"><svg><use href="#apex"></use></svg></span> Industries</p>
+          <h2 class="h2" data-gsap data-gsap-delay="0.06">Engineering Across Diverse Industrial Sectors</h2>
+        </div>
+        <p class="sec-head__aside" data-gsap data-gsap-delay="0.12">Scope is shaped by the operating conditions of each sector rather than a single standard product range.</p>
+      </div>
+      <div class="inds__grid" data-stagger>
+        <a class="ind" href="#contact" data-reveal><img loading="lazy" src="/images/Bulk Material Storage and Handling.png" alt="Oil and gas"><span class="ind__n">01</span><span class="ind__t">Bulk Material Storage & Handling</span><span class="ind__line"></span></a>
+        <a class="ind" href="#contact" data-reveal style="--d:.05s"><img loading="lazy" src="/images/Chemical and Liquid Storage.png" alt="Petrochemical"><span class="ind__n">02</span><span class="ind__t">Chemical & Liquid Storage</span><span class="ind__line"></span></a>
+        <a class="ind" href="#contact" data-reveal style="--d:.1s"><img loading="lazy" src="/images/Heat Transfer and Thermal Applications.png" alt="Chemical"><span class="ind__n">03</span><span class="ind__t">Heat Transfer & Thermal Applications</span><span class="ind__line"></span></a>
+        <a class="ind" href="#contact" data-reveal><img loading="lazy" src="/images/Industrial Manufacturing.png" alt="Cement"><span class="ind__n">04</span><span class="ind__t">Industrial Manufacturing</span><span class="ind__line"></span></a>
+        <a class="ind" href="#contact" data-reveal style="--d:.05s"><img loading="lazy" src="/images/Testing and Special-Purpose Applications.png" alt="Food processing"><span class="ind__n">05</span><span class="ind__t">Testing & Special-Purpose Applications</span><span class="ind__line"></span></a>
+        <a class="ind" href="#contact" data-reveal style="--d:.1s"><img loading="lazy" src="/images/Mining.png" alt="Mining"><span class="ind__n">06</span><span class="ind__t">Mining</span><span class="ind__line"></span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--soft why-about">
+    <div class="shell whyx">
+      <div class="whyx__intro">
+        <p class="eyebrow" data-gsap><span class="eyebrow__mark" aria-hidden="true"><svg><use href="#apex"></use></svg></span> Why Us</p>
+        <h2 class="h2" data-gsap data-gsap-delay="0.06">Why Work With A.I.T Engineers</h2>
+        <p class="lede" data-gsap data-gsap-delay="0.12">Procurement teams tend to be weighing a fabricator against an engineering consultancy. These are the six reasons clients give for choosing a partner that does both.</p>
+      </div>
+      <ul class="whyx__list" data-stagger>
+        <li class="whyx__row"><span class="whyx__i">01</span><div><h3 class="whyx__t">Integrated Engineering Expertise</h3><p class="whyx__d">Design, fabrication and site teams work from one drawing set, so intent survives the handover.</p></div></li>
+        <li class="whyx__row"><span class="whyx__i">02</span><div><h3 class="whyx__t">Custom-Built Industrial Solutions</h3><p class="whyx__d">Equipment built to your process data and site constraints rather than a catalogue size.</p></div></li>
+        <li class="whyx__row"><span class="whyx__i">03</span><div><h3 class="whyx__t">Engineering-To-Installation Capability</h3><p class="whyx__d">One accountable scope from concept drawings through to erection at site.</p></div></li>
+        <li class="whyx__row"><span class="whyx__i">04</span><div><h3 class="whyx__t">Manufacturing Understanding</h3><p class="whyx__d">Details are drawn by people who know how they will be cut, rolled and welded.</p></div></li>
+        <li class="whyx__row"><span class="whyx__i">05</span><div><h3 class="whyx__t">Quality-Focused Execution</h3><p class="whyx__d">Inspection points fixed in the fabrication sequence with records against each stage.</p></div></li>
+        <li class="whyx__row"><span class="whyx__i">06</span><div><h3 class="whyx__t">Responsive Technical Support</h3><p class="whyx__d">A named point of contact and clear status reporting through the project.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cta band band--black" id="contact">
+    <div class="cta__media" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1511454493857-0a29f2c023c7?auto=format&fit=crop&w=2000&q=70" alt="" loading="lazy">
+    </div>
+    <div class="cta__scrim" aria-hidden="true"></div>
+    <div class="cta__grid" aria-hidden="true"></div>
+    <svg class="cta__cad" viewBox="0 0 1440 520" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <path class="draw" d="M-40 420 L360 420 L520 160 L960 160 L1480 160"></path>
+      <path class="draw" d="M1480 480 L1120 480 L980 300 L620 300"></path>
+      <g class="cad-marks"><path d="M360 410v20M350 420h20"></path><path d="M980 290v20M970 300h20"></path></g>
+    </svg>
+    <div class="shell cta__inner">
+      <h2 class="cta__t" data-gsap>Let’s Build Your Next Industrial Project</h2>
+      <p class="cta__d" data-gsap data-gsap-delay="0.08">Talk to our team about your engineering, fabrication, equipment or project execution requirement.</p>
+      <div class="cta__actions" data-gsap data-gsap-delay="0.14">
+        <a class="btn btn--primary btn--lg" href="/contact"> Request a Quote <svg class="btn__arrow" aria-hidden="true"><use href="#arrow"></use></svg> </a>
+        <a class="btn btn--ghost btn--lg" href="tel:+919876543210"> Talk to an Engineer <svg class="btn__arrow" aria-hidden="true"><use href="#arrow"></use></svg> </a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style is:global>
+/* ============================================================
+   A.I.T ENGINEERS — ABOUT PAGE
+   ============================================================ */
+
+/* ---------- 01 · PAGE HERO (compact size & reduced gradient) ---------- */
+.hero {
+  min-height: 52vh !important;
+  justify-content: center !important;
+  padding-block: calc(var(--hdr-h) + 32px) 36px !important;
+}
+
+.hero .hero__title {
+  font-size: clamp(2rem, 3.8vw, 3.4rem);
+  margin: 0 0 16px;
+  line-height: 1.1;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.65);
+}
+
+.hero .hero__lede {
+  max-width: 58ch;
+  font-size: clamp(0.98rem, 1.15vw, 1.1rem);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero .hero__img {
+  opacity: 0.85;
+}
+
+.hero .hero__scrim {
+  background: 
+    linear-gradient(180deg, rgba(5, 8, 11, 0.48) 0%, rgba(5, 8, 11, 0.12) 35%, rgba(5, 8, 11, 0.35) 85%, rgba(5, 8, 11, 0.82) 100%),
+    linear-gradient(96deg, rgba(6, 43, 70, 0.28) 0%, rgba(5, 8, 11, 0.06) 65%);
+}
+
+.hero .hero__sheen {
+  opacity: 0.3;
+}
+
+/* breadcrumb */
+.crumb{position:relative;margin-top:24px}
+.crumb ol{display:flex;align-items:center;gap:12px;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;padding:0;list-style:none;}
+.crumb a{color:rgba(199,209,216,.6);transition:color .4s var(--ease);text-decoration:none;}
+.crumb a:hover{color:var(--cyan)}
+.crumb li[aria-current]{color:rgba(199,209,216,.95)}
+.crumb .sep{width:14px;height:1px;background:rgba(199,209,216,.32);display:inline-block}
+
+/* ---------- 02 · COMPANY OVERVIEW ---------- */
+.story__grid{display:grid;grid-template-columns:.95fr 1fr;gap:88px;align-items:center}
+.story__figure{position:relative;margin:0}
+.story__frame{aspect-ratio:4/5;position:relative;overflow:hidden}
+.story__frame img{width:100%;height:113%;object-fit:cover;will-change:transform}
+.story__body{max-width:58ch}
+.story__body .h2{margin-bottom:26px}
+.story__body .lede{margin-bottom:20px}
+
+/* ---------- 04 · OUR APPROACH (dark .tl variant) ---------- */
+.tl--dark::before{background:var(--hair-dark)}
+.tl--dark::after{background:var(--cyan)}
+.tl--dark .tl__node{background:var(--charcoal);border-color:var(--cyan)}
+.tl--dark .tl__step:hover .tl__node{background:var(--cyan)}
+.tl--dark .tl__n{color:var(--cyan)}
+.tl--dark .tl__t{color:#fff}
+.tl__d{display:block;margin-top:10px;font-size:.88rem;line-height:1.55;color:var(--ink-2);max-width:22ch}
+.tl--dark .tl__d{color:rgba(199,209,216,.62)}
+
+/* ---------- 05 · MISSION & VISION ---------- */
+.mv{position:relative;display:grid;grid-template-columns:1.15fr 1px .85fr;gap:0;align-items:start}
+.mv__rule{position:relative;align-self:stretch;background:var(--hair);overflow:hidden}
+.mv__rule span{position:absolute;left:0;top:0;width:100%;height:0;background:var(--blue)}
+.mv__col{padding:8px 0}
+.mv__col--a{padding-right:80px}
+.mv__col--b{padding-left:80px;padding-top:92px}
+.mv__k{
+  display:block;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;
+  font-weight:600;color:var(--blue);margin-bottom:20px;
+}
+.mv__h{font-size:clamp(1.8rem,3.2vw,2.9rem);letter-spacing:-.03em;margin-bottom:22px}
+.mv__p{font-size:clamp(1rem,1.2vw,1.14rem);line-height:1.65;color:var(--ink-2);max-width:42ch}
+.mv__mark{margin-top:38px;width:96px;height:64px;color:rgba(0,106,154,.38)}
+.mv__mark svg{width:100%;height:100%}
+
+/* ---------- 06 · CORE VALUES (architectural grid) ---------- */
+.vals{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--hair);border-left:1px solid var(--hair)}
+.val{
+  position:relative;padding:40px 32px 44px;
+  border-right:1px solid var(--hair);border-bottom:1px solid var(--hair);
+  transition:background .5s var(--ease);
+}
+.val:hover{background:#fff}
+.val__n{font-size:.72rem;font-weight:600;letter-spacing:.2em;color:var(--ink-3)}
+.val__line{display:block;width:100%;height:20px;margin:22px 0 20px;color:var(--blue);opacity:.55;transition:opacity .5s var(--ease)}
+.val:hover .val__line{opacity:1}
+.val__line svg{width:100%;height:100%}
+.val h3{font-size:1.12rem;margin-bottom:10px;transition:transform .5s var(--ease)}
+.val:hover h3{transform:translateX(6px)}
+.val p{font-size:.9rem;color:var(--ink-2);margin:0}
+.val__rule{position:absolute;left:0;top:-1px;height:2px;width:0;background:var(--blue);transition:width .6s var(--ease)}
+.val:hover .val__rule{width:100%}
+
+/* ---------- 07 · JOURNEY TIMELINE ---------- */
+.jrny{position:relative;padding-top:104px}
+.jrny__track,.jrny__fill{position:absolute;left:0;top:38px;height:1px}
+.jrny__track{width:100%;background:var(--hair)}
+.jrny__fill{width:0;background:var(--blue)}
+.jrny__row{display:grid;grid-template-columns:repeat(6,1fr);gap:0;padding:0;list-style:none;margin:0;}
+.jrny__item{position:relative;padding-right:28px}
+.jrny__item::before{
+  content:"";position:absolute;left:0;top:-72px;width:13px;height:13px;
+  transform:rotate(45deg);background:var(--white);border:1.5px solid var(--blue);
+  transition:background .5s var(--ease);
+}
+.jrny__item:hover::before{background:var(--blue)}
+.jrny__item::after{
+  content:"";position:absolute;left:6px;top:-58px;width:1px;height:32px;background:var(--hair);
+}
+.jrny__item:nth-child(even){padding-top:44px}
+.jrny__item:nth-child(even)::after{height:76px}
+.jrny__y{
+  display:block;font-family:var(--font-h);font-weight:800;
+  font-size:clamp(1.5rem,2.4vw,2.1rem);letter-spacing:-.03em;color:var(--blue);margin-bottom:8px;
+}
+.jrny__t{display:block;font-family:var(--font-h);font-weight:700;font-size:1rem;line-height:1.35}
+
+/* ---------- 08 · CAPABILITY GROUPS ---------- */
+.capgrp{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--hair)}
+.grp{position:relative;padding:48px 44px 52px;border-right:1px solid var(--hair)}
+.grp:last-child{border-right:0}
+.grp__bar{position:absolute;left:0;top:-1px;height:2px;width:0;background:var(--blue);transition:width .8s var(--ease)}
+.grp.is-in .grp__bar,[data-reveal].is-in .grp__bar{width:100%}
+.grp__k{display:flex;align-items:center;gap:12px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--blue);margin-bottom:26px}
+.grp__k svg{width:22px;height:22px;flex:none}
+.grp__h{font-size:1.5rem;letter-spacing:-.025em;margin-bottom:14px}
+.grp__p{font-size:.94rem;color:var(--ink-2);margin-bottom:28px;max-width:34ch}
+.grp__list{padding:0;list-style:none;margin:0;}
+.grp__list li{
+  display:flex;align-items:center;gap:14px;padding:14px 0;border-top:1px solid var(--hair);
+  font-family:var(--font-h);font-weight:600;font-size:.98rem;
+  transition:padding-left .5s var(--ease),color .4s var(--ease);
+}
+.grp__list li:hover{padding-left:8px;color:var(--blue)}
+.grp__list li::before{content:"";width:7px;height:7px;flex:none;transform:rotate(45deg);border:1.5px solid var(--blue)}
+
+/* ---------- 09 · MANUFACTURING COMPOSITION ---------- */
+.mfg__grid{display:grid;grid-template-columns:1.35fr 1fr;gap:64px;align-items:start}
+.mfg__stack{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.mfg__lead{grid-column:1/-1;position:relative;overflow:hidden;margin:0;aspect-ratio:16/10}
+.mfg__lead img{width:100%;height:108%;object-fit:cover;opacity:.78;will-change:transform}
+.mfg__sm{position:relative;overflow:hidden;margin:0;aspect-ratio:4/3;background:var(--black)}
+.mfg__sm img{width:100%;height:100%;object-fit:cover;opacity:.7;transition:opacity .7s var(--ease)}
+.mfg__sm:hover img,.mfg__lead:hover img{opacity:.95}
+.mfg figcaption{
+  position:absolute;left:16px;bottom:14px;display:flex;align-items:center;gap:10px;
+  font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:rgba(247,249,250,.88);
+}
+.mfg figcaption span{display:grid;place-items:center;width:22px;height:22px;border:1px solid rgba(0,160,198,.6);color:var(--cyan);letter-spacing:0}
+.mfg__body{padding-top:8px}
+.mfg__body .h2{margin-bottom:24px}
+.mfg__tags{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:36px;background:var(--hair-dark);padding:0;list-style:none;}
+.mfg__tags li{
+  padding:16px 20px;background:var(--charcoal);
+  font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:rgba(199,209,216,.8);
+  transition:color .45s var(--ease),background .45s var(--ease);
+}
+.mfg__tags li:hover{background:var(--navy);color:var(--cyan)}
+
+/* ---------- 10 · QUALITY PHILOSOPHY ---------- */
+.qphil{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hair);border:1px solid var(--hair)}
+.qstep{position:relative;background:var(--white);padding:34px 28px 38px;transition:background .5s var(--ease)}
+.qstep:hover{background:#fff}
+.qstep__n{font-size:.72rem;font-weight:600;letter-spacing:.2em;color:var(--blue)}
+.qstep svg{display:block;width:30px;height:30px;color:var(--blue);margin:20px 0 18px;transition:transform .6s var(--ease)}
+.qstep:hover svg{transform:translateY(-3px)}
+.qstep h3{font-size:1.02rem;margin-bottom:8px}
+.qstep p{font-size:.88rem;color:var(--ink-2);margin:0}
+.qphil__note{margin-top:26px;font-size:.82rem;color:var(--ink-3);max-width:66ch}
+
+/* ---------- 11 · INDUSTRIES (extends .ind) ---------- */
+.ind--about{
+  aspect-ratio:4/3;display:flex;flex-direction:column;justify-content:flex-end;
+  padding:28px;
+}
+.ind--about .ind__n{position:static;margin-bottom:auto}
+.ind--about .ind__t{position:static;display:block;margin-bottom:10px}
+.ind--about:hover .ind__t{transform:translateY(-4px)}
+.ind__d{
+  position:static;z-index:2;margin:0;max-width:34ch;
+  font-size:.88rem;line-height:1.5;color:rgba(199,209,216,.68);
+  transition:color .5s var(--ease);
+}
+.ind--about:hover .ind__d{color:rgba(199,209,216,.88)}
+.ind--about .ind__line{position:static;margin-top:18px}
+.ind--about:hover .ind__line{width:100%}
+
+/* ---------- 12 · WHY AIT (split) ---------- */
+.whyx{display:grid;grid-template-columns:.85fr 1.15fr;gap:88px;align-items:start}
+.whyx__intro{position:sticky;top:calc(var(--hdr-h) + 32px)}
+.whyx__intro .h2{margin-bottom:22px}
+.whyx__list{border-top:1px solid var(--hair);padding:0;list-style:none;margin:0;}
+.whyx__row{
+  position:relative;display:grid;grid-template-columns:64px 1fr;gap:24px;align-items:baseline;
+  padding:30px 0 28px;border-bottom:1px solid var(--hair);
+  transition:padding-left .55s var(--ease);
+}
+.whyx__row:hover{padding-left:14px}
+.whyx__row::before{content:"";position:absolute;left:0;bottom:-1px;height:1px;width:0;background:var(--blue);transition:width .7s var(--ease)}
+.whyx__row:hover::before{width:100%}
+.whyx__i{font-size:.74rem;font-weight:600;letter-spacing:.2em;color:var(--blue);transition:transform .5s var(--ease)}
+.whyx__row:hover .whyx__i{transform:translateX(4px)}
+.whyx__t{font-size:clamp(1.2rem,1.9vw,1.6rem);letter-spacing:-.025em;margin-bottom:8px;transition:color .5s var(--ease)}
+.whyx__row:hover .whyx__t{color:var(--blue)}
+.whyx__d{font-size:.94rem;color:var(--ink-2);margin:0;max-width:46ch}
+
+/* ---------- SHARED: placeholder disclosure ---------- */
+.plc{
+  display:inline-flex;align-items:center;gap:10px;margin-top:28px;
+  font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--ink-3);
+}
+.plc::before{content:"";width:7px;height:7px;transform:rotate(45deg);border:1.5px solid var(--ink-3);flex:none}
+.band--dark .plc,.band--charcoal .plc,.band--black .plc{color:rgba(199,209,216,.42)}
+.band--dark .plc::before,.band--charcoal .plc::before,.band--black .plc::before{border-color:rgba(199,209,216,.42)}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width:1200px){
+  .story__grid{gap:56px}
+  .whyx{gap:56px}
+  .mfg__grid{gap:44px}
+  .vals{grid-template-columns:repeat(2,1fr)}
+  .qphil{grid-template-columns:repeat(2,1fr)}
+  .jrny__row{grid-template-columns:repeat(3,1fr);row-gap:56px}
+}
+
+@media (max-width:1024px){
+  .phero{min-height:66vh;padding-block:calc(var(--hdr-h) + 56px) 44px}
+  .story__grid{grid-template-columns:1fr;gap:48px}
+  .story__frame{aspect-ratio:16/10}
+  .story__body{max-width:none}
+
+  .mv{grid-template-columns:1fr;gap:0}
+  .mv__rule{display:none}
+  .mv__col--a{padding-right:0;padding-bottom:44px;border-bottom:1px solid var(--hair)}
+  .mv__col--b{padding-left:0;padding-top:44px}
+
+  .capgrp{grid-template-columns:1fr}
+  .grp{border-right:0;border-bottom:1px solid var(--hair);padding:40px 0 44px}
+  .grp:last-child{border-bottom:0}
+  .grp__bar{width:100% !important}
+
+  .mfg__grid{grid-template-columns:1fr;gap:40px}
+  .whyx{grid-template-columns:1fr;gap:40px}
+  .whyx__intro{position:static}
+
+  /* journey → vertical, matching the homepage timeline treatment */
+  .jrny{padding-top:0;padding-left:34px}
+  .jrny__track,.jrny__fill{left:5px;top:0;width:1px;height:100%}
+  .jrny__fill{height:0}
+  .jrny__row{grid-template-columns:1fr;row-gap:0}
+  .jrny__item{padding:0 0 40px}
+  .jrny__item:last-child{padding-bottom:0}
+  .jrny__item:nth-child(even){padding-top:0}
+  .jrny__item::before{left:-34px;top:4px}
+  .jrny__item::after,.jrny__item:nth-child(even)::after{display:none}
+  .jrny__t{max-width:none}
+
+  .ind--about{aspect-ratio:16/10}
+  .ind__d{max-width:none}
+}
+
+@media (max-width:768px){
+  .phero{min-height:62vh}
+  .phero__title{max-width:none}
+  .crumb{margin-top:32px}
+  .crumb ol{font-size:.66rem;letter-spacing:.14em}
+
+  .vals{grid-template-columns:1fr}
+  .val{padding:30px 24px 34px}
+  .qphil{grid-template-columns:1fr}
+  .mfg__stack{grid-template-columns:1fr}
+  .mfg__tags{grid-template-columns:1fr}
+  .whyx__row{grid-template-columns:1fr;gap:8px}
+  .tl__d{max-width:none}
+  .mv__h{font-size:1.7rem}
+}
+
+@media (max-width:430px){
+  .phero__title{font-size:2rem;letter-spacing:-.03em}
+  .grp{padding:32px 0 36px}
+}
+
+/* ---------- MOTION PREFERENCES ---------- */
+@media (prefers-reduced-motion:reduce){
+  .phero__media,.phero__img,.story__frame img,.mfg__lead img{transform:none !important;animation:none !important}
+  .jrny__fill,.mv__rule span{transition:none !important}
+  .ind--about:hover .ind__t{transform:none !important}
+}
+</style>

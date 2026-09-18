@@ -1,0 +1,94 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Purwanchal Enterprises - A.I.T Engineers" description="Purwanchal Enterprises Information">
+  <!-- Page Header Hero Banner -->
+  <section class="hero hero--page" id="top">
+    <div class="hero__media">
+      <img class="hero__img" data-parallax="0.14"
+           src="https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?auto=format&fit=crop&w=2200&q=70"
+           alt="" aria-hidden="true" fetchpriority="high">
+    </div>
+    <div class="hero__scrim" aria-hidden="true"></div>
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__sheen" aria-hidden="true"></div>
+
+    <div class="hero__inner shell hero__inner--page">
+      <p class="eyebrow eyebrow--light hero__eyebrow">
+        <span class="eyebrow__mark" aria-hidden="true"><svg><use href="#apex"/></svg></span>
+        A.I.T Engineers
+      </p>
+
+      <h1 class="hero__title hero__title--page">
+        <span class="line">Purwanchal Enterprises</span>
+      </h1>
+
+      <nav class="crumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="/">Home / Purwanchal Enterprises</a></li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- About Section (Spartan-style Layout with Left Image and Right Text) -->
+  <section class="band band--white about-showcase" id="about">
+    <div class="shell">
+      <div class="about-showcase__grid">
+        <!-- Left Side: Image Frame -->
+        <div class="about-showcase__media">
+          <div class="about-showcase__frame">
+            <img 
+              src="/images/logos/purwanchal-enterprise.jpeg" 
+              alt="Purwanchal Enterprise" 
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <!-- Right Side: Content -->
+        <div class="about-showcase__content">
+          <div class="about-showcase__tag">
+            <span class="about-showcase__dash" aria-hidden="true"></span>
+            <span class="about-showcase__tag-text">ABOUT US</span>
+          </div>
+
+          <p class="about-showcase__lead">
+            <strong>PURWANCHAL ENTERPRISE</strong> is engaged in civil, construction and mechanical work, supporting project requirements with suitable machinery facilities and an experienced working team.
+          </p>
+
+          <p class="about-showcase__body">
+            Our approach focuses on practical execution, coordination and dependable on-site support across different types of industrial and construction activities. By combining manpower, machinery and technical capability, we work to carry out assigned work in line with project requirements, site conditions and agreed specifications, while maintaining attention to quality, safety and responsible execution.
+          </p>
+
+          <div class="about-showcase__action">
+            <a href="/contact" class="about-showcase__btn">
+              <span>Learn More About Us</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="cert-section" id="certifications">
+    <div class="shell">
+      <div class="about-showcase__tag" style="justify-content: center; margin-bottom: 0.5rem;">
+        <span class="about-showcase__dash" aria-hidden="true"></span>
+        <span class="about-showcase__tag-text">VERIFIED CREDENTIALS</span>
+      </div>
+      <h3 class="cert-section__title">Certifications</h3>
+      <div class="cert-section__card">
+        <img 
+          src="/images/Certificate/certificate-purwanchal-enterprise.jpeg" 
+          alt="Purwanchal Enterprise Certificate of Appreciation" 
+          class="cert-section__img"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </section>
+</Layout>

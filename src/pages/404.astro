@@ -1,0 +1,222 @@
+ ---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="404 - Page Not Found | A.I.T Engineers" description="The page you are looking for does not exist or has been moved.">
+  <!-- Page Header Hero Banner -->
+  <section class="hero hero--page" id="top">
+    <div class="hero__media">
+      <img class="hero__img" data-parallax="0.14"
+           src="https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?auto=format&fit=crop&w=2200&q=70"
+           alt="" aria-hidden="true" fetchpriority="high">
+    </div>
+    <div class="hero__scrim" aria-hidden="true"></div>
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__sheen" aria-hidden="true"></div>
+
+    <!-- CAD line graphics -->
+    <svg class="hero__cad" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <g class="cad-lines">  
+        <path class="draw" d="M-40 700 L420 700 L640 300 L1100 300 L1480 300"/>
+        <path class="draw" d="M1480 780 L1080 780 L900 460 L520 460"/>
+        <path class="draw" d="M180 900 L180 640 L340 380 L340 -20"/>
+        <path class="draw" d="M1240 -20 L1240 220 L1360 430 L1360 900"/>
+      </g>
+    </svg>
+
+    <div class="hero__inner shell hero__inner--page" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <p class="eyebrow eyebrow--light hero__eyebrow">
+        <span class="eyebrow__mark" aria-hidden="true"><svg><use href="#apex"/></svg></span>
+        Error 404
+      </p>
+
+      <h1 class="hero__title hero__title--page">
+        <span class="line">Page Not Found</span>
+      </h1>
+
+      <nav class="crumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="/">Home / 404 Not Found</a></li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- 404 Content Section -->
+  <section class="band band--white not-found" style="padding: 90px 0; min-height: 50vh;">
+    <div class="shell" style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <div class="not-found__card">
+        <div class="not-found__code" aria-hidden="true">
+          <span>4</span>
+          <span class="not-found__zero">
+            <svg viewBox="0 0 40 40"><use href="#ico-mech"/></svg>
+          </span>
+          <span>4</span>
+        </div>
+
+        <h2 class="h2 not-found__title">Component Not Located</h2>
+        <p class="not-found__desc">
+          The industrial page, equipment specification, or drawing link you are attempting to access does not exist, has been repositioned, or is temporarily unavailable.
+        </p>
+
+        <div class="not-found__actions">
+          <a class="btn btn--primary" href="/">
+            <svg class="btn__icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            Return to Home
+          </a>
+          <a class="btn btn--outline" href="/products">
+            View Our Products
+            <svg class="btn__arrow" aria-hidden="true"><use href="#arrow"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="/contact">
+            Contact Support
+          </a>
+        </div>
+
+        <div class="not-found__links">
+          <p class="not-found__links-title">Quick Links:</p>
+          <div class="not-found__links-grid">
+            <a href="/about">Company Profile</a>
+            <a href="/products/storage-tank">Storage Tanks</a>
+            <a href="/products/fly-ash-storage-silo">Fly Ash Silos</a>
+            <a href="/products/cement-silo">Cement Silos</a>
+            <a href="/products/heat-exchanger-coil">Heat Exchangers</a>
+            <a href="/orbital-gx">Orbital - GX</a>
+            <a href="/purwanchal-enterprises">Purwanchal Enterprises</a>
+            <a href="/dsi">DSI.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .not-found__card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 60px 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .not-found__code {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: var(--font-h, 'Manrope', sans-serif);
+    font-size: 7rem;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--c-pri, #006A9A);
+    margin-bottom: 24px;
+    letter-spacing: -0.04em;
+  }
+
+  .not-found__zero {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 84px;
+    height: 84px;
+    color: var(--blue, #006A9A);
+    animation: rotateGear 16s linear infinite;
+  }
+
+  .not-found__zero svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  @keyframes rotateGear {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .not-found__title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 16px;
+  }
+
+  .not-found__desc {
+    font-size: 1.08rem;
+    color: #4b5563;
+    max-width: 580px;
+    margin: 0 auto 36px;
+    line-height: 1.7;
+  }
+
+  .not-found__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+
+  .not-found__links {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 32px;
+    text-align: center;
+  }
+
+  .not-found__links-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #6b7280;
+    margin-bottom: 16px;
+  }
+
+  .not-found__links-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 18px;
+  }
+
+  .not-found__links-grid a {
+    font-size: 0.92rem;
+    color: var(--c-pri, #006A9A);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: #f1f5f9;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  }
+
+  .not-found__links-grid a:hover {
+    background: var(--c-pri, #006A9A);
+    color: #ffffff;
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 640px) {
+    .not-found__card {
+      padding: 40px 20px;
+    }
+    .not-found__code {
+      font-size: 4.8rem;
+    }
+    .not-found__zero {
+      width: 58px;
+      height: 58px;
+    }
+    .not-found__actions {
+      flex-direction: column;
+      width: 100%;
+    }
+    .not-found__actions .btn {
+      width: 100%;
+    }
+  }
+</style>

@@ -1,0 +1,164 @@
+---
+import { productsData } from '../data/products.js';
+---
+<!-- ============ HEADER ============ -->
+<header class="hdr" id="hdr">
+  <div class="hdr__inner shell">
+    <a class="brand" href="/" aria-label="A.I.T Engineers — home">
+      <img src="/images/banner/logo.png" alt="A.I.T Engineers" width="345" height="480">
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="/">Home</a></li>
+        <li><a class="nav__link" href="/about">Company Profile</a></li>
+        <li class="nav__item--has-dropdown">
+          <a class="nav__link" href="/products">Our Products</a>
+          <div class="mega-menu">
+            <ul class="mega-categories">
+              {productsData.map(cat => (
+                <li class={`mega-category-item ${cat.items.length > 0 ? 'has-submenu' : ''}`}>
+                  <a href={`/products/${cat.id}`}>{cat.category}</a>
+                  {cat.items.length > 0 && (
+                    <div class="mega-submenu">
+                      <ul>
+                        {cat.items.map(item => (
+                          <li><a href={`/products/${cat.id}/${item.id}`}>{item.name}</a></li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </li>
+        <li><a class="nav__link" href="/contact">Contact Us</a></li>
+        <li><a class="nav__link" href="/orbital-gx">Orbital - GX</a></li>
+        <li><a class="nav__link" href="/purwanchal-enterprises">Purwanchal Enterprises</a></li>
+        <li><a class="nav__link" href="/dsi">DSI.com</a></li>
+      </ul>
+    </nav>
+
+    
+
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobilemenu">
+      <span></span><span></span>
+    </button>
+  </div>
+  <span class="hdr__rule" aria-hidden="true"></span>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mmenu" id="mobilemenu" hidden>
+  <div class="mmenu__grid" aria-hidden="true"></div>
+  <nav class="mmenu__nav" aria-label="Mobile">
+    <a href="/"><span class="mmenu__idx">01</span> Home</a>
+    <a href="/about"><span class="mmenu__idx">02</span> About Us</a>
+    <a href="/products"><span class="mmenu__idx">03</span> Our Products</a>
+    <a href="/contact"><span class="mmenu__idx">04</span> Contact Us</a>
+  </nav>
+  <div class="mmenu__foot">
+    <a class="btn btn--primary btn--block" href="/contact">Request a Quote <svg class="btn__arrow" aria-hidden="true"><use href="#arrow"/></svg></a>
+    <ul class="mmenu__meta">
+      <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+      <li><a href="mailto:info@aitengineers.com">info@aitengineers.com</a></li>
+      <li>Thane, Maharashtra, India</li>
+    </ul>
+  </div>
+</div>
+
+<style>
+  /* Mega Menu Styles */
+  .nav__item--has-dropdown {
+    position: relative;
+  }
+
+  .nav__item--has-dropdown:hover .mega-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .mega-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 250px;
+    background: #000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 100;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  }
+
+  .mega-categories {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mega-category-item {
+    position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .mega-category-item > a {
+    display: block;
+    padding: 12px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+
+  .mega-category-item:hover > a {
+    background-color: var(--blue, #006A9A); /* Red active state matching screenshot */
+    color: #fff;
+  }
+
+  /* Submenu Styles */
+  .mega-submenu {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Fly out to the right */
+    width: 300px;
+    background: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 5px 10px 30px rgba(0,0,0,0.5);
+  }
+
+  .has-submenu:hover .mega-submenu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mega-submenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mega-submenu ul li {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .mega-submenu ul li a {
+    display: block;
+    padding: 12px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+
+  .mega-submenu ul li a:hover {
+    background-color: var(--blue, #006A9A);
+  }
+</style>
