@@ -655,7 +655,7 @@ body.is-preload *,body.is-preload *::before,body.is-preload *::after{transition:
   .faq__grid{gap:56px}
 }
 
-@media (max-width:1024px){
+@media (max-width:1080px){
   :root{--sp:92px;--hdr-h:84px}
   .hdr__inner{gap:24px}
   .nav,.hdr__cta{display:none}
@@ -762,15 +762,16 @@ body.is-preload *,body.is-preload *::before,body.is-preload *::after{transition:
   .cl{width:170px;height:80px;margin-right:14px}
 }
 
-@media (max-width:430px){
+@media (max-width:480px){
   :root{--gutter:20px;--chamfer:30px}
   .hero__title{font-size:2.15rem;letter-spacing:-.03em}
   .brand img{height:60px;max-width:none}
   .tick{display:none}
   .figcap{font-size:.66rem}
+  .btn{padding:13px 20px;font-size:0.88rem}
 }
 
-@media (min-width:1025px){
+@media (min-width:1081px){
   .hero__foot{padding-right:214px}
   .ftr__bar{padding-right:214px}
 }

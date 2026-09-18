@@ -372,11 +372,17 @@ import Layout from '../layouts/Layout.astro';
       box-sizing: border-box;
     }
     .phone-row {
-      flex-direction: column;
+      display: flex;
+      flex-direction: row;
       gap: 8px;
+      width: 100%;
     }
     .phone-prefix {
-      width: fit-content;
+      flex-shrink: 0;
+    }
+    .phone-input {
+      flex: 1;
+      min-width: 0;
     }
     .badge-group {
       gap: 6px;

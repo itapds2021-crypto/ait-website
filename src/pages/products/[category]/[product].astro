@@ -305,7 +305,7 @@ const { category, product } = Astro.props;
   }
   .submit-btn {
     width: 100%;
-    background: #dc2626;
+    background: var(--c-pri, var(--blue, #006A9A));
     color: #fff;
     padding: 1rem;
     border: none;
@@ -313,11 +313,12 @@ const { category, product } = Astro.props;
     font-size: 1.1rem;
     font-weight: 700;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease;
     margin-top: 1rem;
   }
   .submit-btn:hover {
-    background: #b91c1c;
+    background: #005077;
+    transform: translateY(-2px);
   }
   .phone-input-group {
     display: flex;
